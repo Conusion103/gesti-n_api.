@@ -5,12 +5,12 @@ This is a small web application for registering, editing, and deleting products 
 ---
 
 ## 🗂️ Project Structure
-
+```
 TRAINING-W3-M3/
 ├── public/ # Public static files
 ├── src/ # Source code
 │ ├── scripts/ # JavaScript scripts
-│ │ ├── main.js # Main entry script
+│ │ ├── gestion_api.js # Main entry script
 │ │ ├── methods.js # Reusable functions (API calls)
 │ │ ├── product.js # Product logic/utilities
 │ │ ├── validate.js # Input validation
@@ -22,7 +22,7 @@ TRAINING-W3-M3/
 ├── index.html # Main HTML page
 ├── package-lock.json # npm lock file
 └── package.json # npm config
-
+```
 ---
 
 ## 🧾 Description
