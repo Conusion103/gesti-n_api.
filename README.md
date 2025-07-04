@@ -1,7 +1,11 @@
-# 🧮 Product Management App - Training Week 3 Module 3 (RIWI)  
-A small web app to register, edit, and delete products with validation and a simulated backend.
+# 🧮 Product Management App
 
-## 🗂️ Project Structure  
+This is a small web application for registering, editing, and deleting products by name, price, and amount. It uses a mock backend with `json-server` and features modular code structure with alerts via SweetAlert2.
+
+---
+
+## 🗂️ Project Structure
+
 TRAINING-W3-M3/
 ├── public/ # Public static files
 ├── src/ # Source code
@@ -10,58 +14,80 @@ TRAINING-W3-M3/
 │ │ ├── methods.js # Reusable functions (API calls)
 │ │ ├── product.js # Product logic/utilities
 │ │ ├── validate.js # Input validation
-│ │ └── alerts.js # SweetAlert2 alert functions
+│ │ └── alerts.js # SweetAlert2 alerts
 │ └── styles/
 │ └── style.css # CSS styles
 ├── .gitignore # Git ignore rules
 ├── database.json # Mock database JSON
 ├── index.html # Main HTML page
-├── package-lock.json # npm dependencies lock file
-├── package.json # npm project config
+├── package-lock.json # npm lock file
+└── package.json # npm config
 
-markdown
+---
+
+## 🧾 Description
+
+This app was built using HTML, CSS, and JavaScript (with modules). It allows users to perform CRUD operations on a list of products using a fake REST API (`json-server`).
+
+---
+
+## ✅ Features
+
+- 🧾 Add, edit, delete products
+- 🔒 Validations for empty/invalid inputs
+- ⚠️ SweetAlert2 feedback messages
+- 🔁 Dynamic DOM rendering of product cards
+- 📦 Product storage via `json-server`
+- 📱 Responsive UI with Flexbox
+
+---
+
+## 🛠️ Technologies
+
+- HTML5
+- CSS3 (Flexbox, shadows, gradients)
+- Vanilla JavaScript (DOM, fetch API, ES Modules)
+- SweetAlert2
+- json-server
+
+---
+
+## 🚀 How to Run
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-user/your-repo.git
+Install dependencies:
+
+bash
 Copiar
 Editar
+npm install
+Start the mock server:
 
-## 🧾 Description  
-This project uses HTML, CSS, and vanilla JavaScript to practice:  
-- Form validation (empty inputs, duplicates, numeric checks)  
-- Dynamic DOM manipulation  
-- API calls with fetch  
-- CRUD operations with a fake REST API (JSON server)  
-- SweetAlert2 for user-friendly alerts (top-right toast notifications)  
-- Responsive design with CSS Flexbox  
+bash
+Copiar
+Editar
+npx json-server --watch database.json
+Open index.html in your browser
 
-## ✅ Features  
-- Input for product name, price, and amount  
-- Validation ensures non-empty unique names, price > 0, amount ≥ 0  
-- Products displayed dynamically with Edit and Delete buttons  
-- Prevents duplicate product names  
-- Uses toast notifications for success and error messages  
-- Data fetched and updated asynchronously  
-- No page reloads on form submission  
+🔐 License
+For educational use only. Not licensed for production.
 
-## 🔧 Technologies Used  
-- HTML5  
-- CSS3 (Flexbox, styling)  
-- Vanilla JavaScript (ES6 modules, async/await, fetch)  
-- SweetAlert2 for alerts  
-- JSON Server (mock backend)  
+🧠 Learning Topics
+Modular JS and separation of concerns
 
-## 📂 How to Use  
-1. Clone or download this repo.  
-2. Run `npm install` to install dependencies (including SweetAlert2).  
-3. Run your JSON server to serve `database.json` at `http://localhost:3000/product`.  
-4. Open `index.html` in a modern browser.  
-5. Add, edit, or delete products using the form and buttons.  
-6. See notifications appear at the top-right corner.  
+Input validation and error handling
 
-## 📄 Author  
-Coder: Isai David Ariza Cantillo  
-Email: isaistudio1.1@hotmail.com  
-Clan: Sierra  
+Dynamic rendering with JS
 
-Designed and developed as part of a learning exercise at RIWI.  
+SweetAlert2 integration
 
-© 2025 Isai David Ariza Cantillo. All rights reserved.  
+Responsive design with media queries
 
+👨‍💻 Author
+Coder: Isai David Ariza Cantillo
+Email: isaistudio1.1@hotmail.com
+Clan: Sierra
+Training: Week 3, Module 3 – RIWI 2025
+---
