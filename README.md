@@ -5,49 +5,51 @@ This is a small web application for registering, editing, and deleting products 
 ---
 
 ## 🗂️ Project Structure
-```
+
+```bash
 TRAINING-W3-M3/
-├── public/ # Public static files
-├── src/ # Source code
-│ ├── scripts/ # JavaScript scripts
-│ │ ├── gestion_api.js # Main entry script
-│ │ ├── methods.js # Reusable functions (API calls)
-│ │ ├── product.js # Product logic/utilities
-│ │ ├── validate.js # Input validation
-│ │ └── alerts.js # SweetAlert2 alerts
-│ └── styles/
-│ └── style.css # CSS styles
-├── .gitignore # Git ignore rules
-├── database.json # Mock database JSON
-├── index.html # Main HTML page
-├── package-lock.json # npm lock file
-└── package.json # npm config
+├── public/                  # Public static files
+├── src/                     # Source code
+│   ├── scripts/             # JavaScript scripts
+│   │   ├── main.js          # Main entry script
+│   │   ├── methods.js       # API utilities
+│   │   ├── product.js       # Product logic
+│   │   ├── validate.js      # Input validation
+│   │   └── alerts.js        # SweetAlert2 alerts
+│   └── styles/
+│       └── style.css        # CSS styles
+├── .gitignore               # Git ignore rules
+├── database.json            # Mock database for json-server
+├── index.html               # Main HTML page
+├── package-lock.json        # npm lock file
+└── package.json             # npm config
 ```
+
 ---
 
 ## 🧾 Description
 
-This app was built using HTML, CSS, and JavaScript (with modules). It allows users to perform CRUD operations on a list of products using a fake REST API (`json-server`).
+This app was built using HTML, CSS, and JavaScript (ES Modules). It performs full CRUD operations on a list of products using a fake REST API provided by `json-server`.
 
 ---
 
 ## ✅ Features
 
-- 🧾 Add, edit, delete products
-- 🔒 Validations for empty/invalid inputs
-- ⚠️ SweetAlert2 feedback messages
-- 🔁 Dynamic DOM rendering of product cards
-- 📦 Product storage via `json-server`
-- 📱 Responsive UI with Flexbox
+- 📥 Add, edit, and delete products
+- 🧪 Validates empty or invalid inputs
+- 🔔 Alerts using SweetAlert2 (toasts & modals)
+- 🔁 Renders product cards dynamically
+- 💾 Stores data via `json-server`
+- 📱 Responsive layout with Flexbox and media queries
 
 ---
 
 ## 🛠️ Technologies
 
-- HTML5
-- CSS3 (Flexbox, shadows, gradients)
-- Vanilla JavaScript (DOM, fetch API, ES Modules)
-- SweetAlert2
+- HTML5  
+- CSS3 (Flexbox, gradients, shadows)  
+- Vanilla JavaScript (Modules, Fetch API)  
+- SweetAlert2  
 - json-server
 
 ---
@@ -57,37 +59,42 @@ This app was built using HTML, CSS, and JavaScript (with modules). It allows use
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-user/your-repo.git
-Install dependencies:
+   cd your-repo
+   ```
 
-bash
-Copiar
-Editar
-npm install
-Start the mock server:
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-bash
-Copiar
-Editar
-npx json-server --watch database.json
-Open index.html in your browser
+3. Start the mock server:
+   ```bash
+   npx json-server --watch database.json
+   ```
 
-🔐 License
-For educational use only. Not licensed for production.
+4. Open `index.html` in your browser.
 
-🧠 Learning Topics
-Modular JS and separation of concerns
-
-Input validation and error handling
-
-Dynamic rendering with JS
-
-SweetAlert2 integration
-
-Responsive design with media queries
-
-👨‍💻 Author
-Coder: Isai David Ariza Cantillo
-Email: isaistudio1.1@hotmail.com
-Clan: Sierra
-Training: Week 3, Module 3 – RIWI 2025
 ---
+
+## 🔐 License
+
+For educational purposes only. Not licensed for production use.
+
+---
+
+## 🧠 Learning Topics
+
+- Modular JS architecture
+- Input validation and error handling
+- Dynamic DOM rendering
+- SweetAlert2 integration
+- Responsive design with media queries
+
+---
+
+## 👨‍💻 Author
+
+**Coder**: Isai David Ariza Cantillo  
+**Email**: isaistudio1.1@hotmail.com  
+**Clan**: Sierra  
+**Training**: Week 3, Module 3 – RIWI 2025
