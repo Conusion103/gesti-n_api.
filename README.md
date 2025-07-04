@@ -58,7 +58,7 @@ This app was built using HTML, CSS, and JavaScript (ES Modules). It performs ful
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-user/your-repo.git
+   git clone https://github.com/Conusion103/gesti-n_api..git
    cd your-repo
    ```
 
